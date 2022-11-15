@@ -12,7 +12,7 @@ class Car(models.Model):
         return self.make + ' ' + self.carmodel
 
 
-class Customer:
+class Customer(models.Model):
     name = models.CharField(max_length=50)
     age = models.CharField(max_length=3)
     address = models.CharField(max_length=50)
@@ -21,7 +21,7 @@ class Customer:
         return self.name + ' ' + self.Customer
 
 
-class Employee:
+class Employee(models.Model):
     name = models.CharField(max_length=50)
     branch = models.CharField(max_length=3)
     address = models.CharField(max_length=50)
